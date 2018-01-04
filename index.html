@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
 <body>
         
         Home Square Footage: <input type="text" id="home-sqft" name="home_sqft"><br>
@@ -10,6 +13,17 @@
                 <option value="dc">DC</option>
                 <option value="md" selected>MD</option>
               </select>
+              <button id="check-btn">Analyze</button>
+
+        <h3>Output:</h3>
+
+       <script type="text/javascript">
+            $(document).ready(function(){
+                $("#check-btn").click(function(){
+                    alert("Hello");
+                });
+            });
+       </script>
        
 </body>
 </html>
