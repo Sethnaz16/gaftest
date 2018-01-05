@@ -2,28 +2,30 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="statevalue.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
 </head>
 <body>
-        
-        Home Square Footage: <input type="text" id="home-sqft" name="home_sqft"><br>
-        Stories: <input type="text" id="stories" name="lname"><br>
-        State: <select id="state">
-                <option value="nj">NJ</option>
-                <option value="va">VA</option>
-                <option value="dc">DC</option>
-                <option value="md" selected>MD</option>
+        Home Square Footage: <input type="number" id="homesqft"><br>
+        Stories: <select id="stories" name="stories">
+                <option value="1" seleted>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
-              <button id="check-btn">Analyze</button>
+        State: <select id="state" name="state">
+                <option value="NJ">NJ</option>
+                <option value="VA">VA</option>
+                <option value="DC">DC</option>
+                <option value="CA">CA</option>
+                <option value="MD" selected>MD</option>
+              </select>
+              <button id="check-btn" onclick="analyze()">Analyze</button>
 
         <h3>Output:</h3>
 
-       <script type="text/javascript">
-            $(document).ready(function(){
-                $("#check-btn").click(function(){
-                    alert("Hello");
-                });
-            });
-       </script>
+       
        
 </body>
 </html>
