@@ -12,10 +12,10 @@ let analyze = () => {
     let state = document.getElementById("state").value;
 
     // Initial calculations
-    let roofSqft = getRoofSqFt(homeSqft, stories); // Calculate
-    let sqrtRoof = getSqrtRoofSqft(roofSqft); // Calculate
-    let roofWidth = getRoofWidth(sqrtRoof); // Calculate
-    let roofHeight = getRoofHeight(roofSqft, roofWidth); // Calculate
+    let roofSqft = getRoofSqFt(homeSqft, stories);
+    let roofWidth = getRoofWidth(sqrtRoof);
+    let sqrtRoof = getSqrtRoofSqft(roofSqft);
+    let roofHeight = getRoofHeight(roofSqft, roofWidth);
 
     // Configure system
     let roofPlane = {
